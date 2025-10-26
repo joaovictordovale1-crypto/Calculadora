@@ -22,7 +22,7 @@ calculadora.geometry("300x350")
 
 telinha = Entry(calculadora,width=20,font=("Verdana",15))
 telinha.pack(pady=40)
-
+calculadora.bind('<Return>',lambda event:resultado(telinha))
 div1 = Frame(calculadora,width=250,height=20,bg="blue")
 div1.pack(pady=(0,10))
 
